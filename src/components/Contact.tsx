@@ -1,7 +1,8 @@
 import { Phone, Mail, MessageCircle } from "lucide-react";
 
 const contactInfo = [
-  { icon: Phone, label: "Téléphone", value: "+221 76 121 88 29", href: "tel:+221761218829" },
+  { icon: Phone, label: "Téléphone 1", value: "+221 76 121 88 29", href: "tel:+221761218829" },
+  { icon: Phone, label: "Téléphone 2", value: "+221 77 154 72 67 ", href: "tel:+221771547267" },
   { icon: MessageCircle, label: "WhatsApp", value: "+221 76 121 88 29", href: "https://wa.me/221761218829" },
   { icon: Mail, label: "Email", value: "ramatoulayediouf074@gmail.com", href: "mailto:ramatoulayediouf074@gmail.com" },
 ];
@@ -23,7 +24,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-5 max-w-4xl mx-auto mb-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto mb-8">
           {contactInfo.map((c) => (
             <a
               key={c.label}
